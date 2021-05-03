@@ -57,9 +57,9 @@ class CurrencyConv:
     
     
     def parse(self, input_string):
-        m_1 = re.match(r'(-?\d+)\s?([a-zA-Z]+) to ([a-zA-Z]+)', input_string)
-        m_2 = re.match(r'(-?\d+)\s?([a-zA-Z]+) ([a-zA-Z]+)', input_string)
-        m_3 = re.match(r'(-?\d+)\s?([a-zA-Z]+)', input_string)
+        m_1 = re.match(r'(-?\d+)\s*([a-zA-Z]+) +to +([a-zA-Z]+)', input_string)
+        m_2 = re.match(r'(-?\d+)\s*([a-zA-Z]+) +([a-zA-Z]+)', input_string)
+        m_3 = re.match(r'(-?\d+)\s*([a-zA-Z]+)', input_string)
 
         if m_1 != None:
             m = m_1
