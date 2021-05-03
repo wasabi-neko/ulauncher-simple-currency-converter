@@ -1,0 +1,26 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "simple-currency converter",
+  "description": "a fast way to convert currency",
+  "developer_name": "wasabi-neko",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "currency_conv_kw",
+      "type": "keyword",
+      "name": "simple-currency-converter",
+      "default_value": "cu"
+    },
+    {
+      "id": "default_target",
+      "type": "text",
+      "name": "default currency convert target",
+      "description": "none",
+      "default_value": "TWD"
+    }
+  ]
+}
+  
